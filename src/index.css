@@ -1,13 +1,117 @@
-body {
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  background-color: rgb(231, 227, 227);
+  color: #888;
+}
+.container{
+  margin: 5vh auto;
+  max-width: 117rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.header{
+  min-width: 82%;
+  max-width : 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(8, 160, 139);
+}
+
+.btn{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: rgb(17, 187, 199);
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: rgb(231, 231, 231);
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+
+.form{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input{
+  width: 90%;
+  padding:1.5rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+.form .btn{
+  width: 90%;
+  margin-top: 1.5rem;
+}
+
+.tasks{
+  margin: .5rem 0;
+  width: 100%;
+  padding: 1rem 1rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap : wrap;
+}
+
+.task{
+  padding: 2rem 1rem;
+  width : 35rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  border-left:5px solid transparent;
+  cursor: pointer;
+}
+
+.marked{
+  border-left:5px solid green;
+
+}
+
+h3{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  color: rgb(8, 160, 139);
+}
+p{
+  font-size: 1.7rem;
+  font-weight: 400;
 }
